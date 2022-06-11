@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning</title>
+    <style>
+        .position_fixed {
+            position: fixed;
+            top: 30px;
+            right: 5px;
+            color: goldenrod;
+        }
+
+        .position_relative {
+            position: relative;
+            top: 20px;
+            left: 100px;
+            color: blueviolet;
+        }
+
+        .position_static {
+            position: static;
+            color: red;
+        }
+
+        .container {
+            position: relative;
+            color: royalblue;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .static {
+            position: absolute;
+            top: 5px;
+            left: 15px;
+            color: red;
+        }
+
+        .relative {
+            position: absolute;
+            top: 5px;
+            right: 15px;
+            color: green;
+        }
+
+        .fixed {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: blueviolet;
+        }
+
+        .absolute {
+            position: absolute;
+            bottom: 30px;
+            left: 15px;
+            color: cadetblue;
+        }
+
+        .sticky {
+            position: absolute;
+            bottom: 30px;
+            right: 15px;
+            color: cyan;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Paragraph with no position.</p>
+    <p>Paragraph with no position.</p>
+    <p>Paragraph with no position.</p>
+    <p class="position_fixed">Paragraph with no position.</p>
+    <p class="position_relative">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptatum impedit
+        reprehenderit corrupti et
+        voluptate, sint similique ut commodi rerum hic molestiae quaerat fugit adipisci.</p>
+    <p class="position_static">This paragraph has a static position.</p>
+    <div>
+        <div class="container">
+            <img src="../assets/banner.jpg" alt="">
+            <p class="static">Static</p>
+            <p class="relative">Relative</p>
+            <p class="fixed">Fixed</p>
+            <p class="absolute">Absolute</p>
+            <p class="sticky">Sticky</p>
+        </div>
+    </div>
+</body>
+
+</html>
