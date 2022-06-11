@@ -6,10 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>border</title>
+    <style>
+        .dotted {
+            border-style: dotted;
+            border-width: 10px;
+        }
+
+        .dashed {
+            border-style: dashed;
+            border-width: 10px;
+        }
+
+        .double {
+            border-style: double;
+            border-width: 10px;
+        }
+
+        .groove {
+            border-style: groove;
+            border-width: 10px;
+        }
+
+        .ridge {
+            border-style: ridge;
+            border-width: 10px;
+        }
+
+        .inset {
+            border-style: inset;
+            border-width: 10px;
+        }
+
+        .outset {
+            border-bottom-style: outset;
+            border-width: 10px;
+        }
+
+        .max-width {
+            border: 1px solid lawngreen;
+            max-width: 50px;
+        }
+
+        .min-height {
+            border: 1px solid coral;
+            min-height: 100px;
+        }
+    </style>
 </head>
 
 <body>
-
+    <h1 class="dotted">Dotted</h1>
+    <h1 class="dashed">Dashed</h1>
+    <h1 class="double">Double</h1>
+    <h1 class="groove">Groove</h1>
+    <h1 class="ridge">Ridge</h1>
+    <h1 class="inset">Inset</h1>
+    <h1 class="outset">Outset</h1>
+    <div>
+        <p class="max-width">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, velit maiores! Accusamus
+            impedit mollitia alias obcaecati inventore! Atque tempore reprehenderit aperiam quae.</p>
+        <p class="min-height">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, velit maiores! Accusamus
+            impedit mollitia alias obcaecati inventore! Atque tempore reprehenderit aperiam quae.</p>
+    </div>
 </body>
 
 </html>
