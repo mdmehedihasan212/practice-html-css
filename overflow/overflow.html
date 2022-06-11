@@ -7,17 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>overflow</title>
     <style>
-        div {
+        .overflow {
             width: 250px;
             height: 250px;
+            margin-left: 50px;
             background-color: rgb(160, 182, 248);
             overflow: scroll;
+        }
+
+        section div {
+            margin-left: 50px;
+            width: 200px;
+            height: 200px;
+            border: 1px solid gainsboro;
+        }
+
+        .break-word {
+            word-wrap: break-word;
         }
     </style>
 </head>
 
 <body>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis beatae sed, placeat omnis dolorum deserunt
+    <h1>overflow</h1>
+    <div class="overflow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis beatae sed, placeat omnis
+        dolorum deserunt
         dicta, assumenda et, error architecto vero alias? Quibusdam laborum commodi voluptatibus aspernatur dolorum
         fugit maiores consectetur nisi excepturi illo. Eum temporibus nisi, velit harum doloribus sed consequatur
         reiciendis, eius asperiores accusamus molestias facere consequuntur deserunt dolorum nam odio deleniti, iure
@@ -25,6 +39,21 @@
         nisi sit exercitationem voluptates repellat excepturi autem aut voluptatibus nulla! Dolorum itaque nisi incidunt
         quis voluptas tenetur dicta. Ipsam, alias accusamus. Illo sint corporis nobis ab obcaecati assumenda labore
         eveniet.</div>
+
+    <h1>Word Wrap</h1>
+    <section>
+        <div class="normal-word">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, laborum totam? Ullam
+            nemo cupiditate pariatur iure! Quibusdam excepturi similique totam tenetur delectus, quo placeat, quas ullam
+            reiciendis corrupti consectetur expedita, earum illo? Impedit pariatur dolore doloribus, minima soluta
+            beatae, amet rerum quae laudantium culpa iste necessitatibus, sunt vitae id accusamus?
+        </div>
+        <div class="break-word">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum velit ab omnis suscipit ut expedita
+                quidem debitis perspiciatis officiis nesciunt, animi asperiores, vitae sint non. Assumenda tempore
+                dignissimos obcaecati hic eligendi, cumque maiores esse corporis labore blanditiis eum, optio recusandae
+                voluptate fugit dolor qui veniam, fuga vero nulla incidunt ipsam.</p>
+        </div>
+    </section>
 </body>
 
 </html>
