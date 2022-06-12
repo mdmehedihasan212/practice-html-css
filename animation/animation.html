@@ -6,10 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>animation</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: white;
+            position: relative;
+            animation: animation 5s infinite;
+        }
+
+        #first-div {
+            animation-timing-function: linear;
+        }
+
+        #second-div {
+            animation-timing-function: ease;
+        }
+
+        #third-div {
+            animation-timing-function: ease-in;
+        }
+
+        #four-div {
+            animation-timing-function: ease-out;
+        }
+
+        #five-div {
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes animation {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 300px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-
+    <h1>Animation Properties</h1>
+    <div id="first-div">linear</div>
+    <div id="second-div">ease</div>
+    <div id="third-div">ease-in</div>
+    <div id="four-div">ease-out</div>
+    <div id="five-div">ease-in-out</div>
 </body>
 
 </html>
