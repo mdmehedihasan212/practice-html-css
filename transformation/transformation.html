@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transformation</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .first {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            transform: rotate(10deg);
+        }
+
+        .second {
+            margin-top: 30px;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(128, 0, 11);
+            transform: rotate(-10deg);
+        }
+
+        .main {
+            height: 100px;
+            width: 100px;
+            padding: 30px;
+            margin: 20px;
+            border: 1px solid red;
+            position: relative;
+        }
+
+        .transform-origin {
+            position: absolute;
+            background-color: red;
+            border: 1px solid greenyellow;
+            padding: 50px;
+            transform: rotate(15deg);
+            transform-origin: 50% 75%;
+        }
+
+        .translate-container {
+            height: 100px;
+            width: 100px;
+            padding: 30px;
+            margin: 20px;
+            border: 1px solid rgb(30, 28, 28);
+            position: relative;
+        }
+
+        .translate {
+            padding: 30px;
+            position: absolute;
+            background-color: red;
+            transform: translate(100px 50px);
+        }
+
+        .skew-container {
+            height: 100px;
+            width: 100px;
+            padding: 30px;
+            margin: 20px;
+            border: 1px solid rgb(30, 28, 28);
+            position: relative;
+        }
+
+        .skew {
+            position: absolute;
+            padding: 20px;
+            background-color: gray;
+            transform: skew(30deg);
+        }
+
+        .multiple-translate {
+            height: 100px;
+            width: 100px;
+            padding: 30px;
+            margin: 20px;
+            border: 1px solid rgb(30, 28, 28);
+            position: relative;
+        }
+
+        .multiple {
+            position: absolute;
+            padding: 80px;
+            background-color: lightcoral;
+            transform: rotate(45deg) translate(100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <p>rotate by 10deg</p>
+    </div>
+    <div class="second">
+        <p>negative value rotate by 10deg</p>
+    </div>
+    <h1>transform-origin</h1>
+    <div class="main">
+        <div class="transform-origin">
+            transform-origin
+        </div>
+    </div>
+    <div class="translate-container">
+        <div class="translate">
+            Translate
+        </div>
+    </div>
+    <h1>The skew Method</h1>
+    <div class="skew-container">
+        <div class="skew">
+            skew
+        </div>
+    </div>
+    <h1>Multiple Transforms</h1>
+    <div class="multiple-translate">
+        <div class="multiple">
+
+        </div>
+    </div>
+</body>
+
+</html>
